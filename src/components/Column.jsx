@@ -10,15 +10,14 @@ export default function Column({ title, tasks, onEdit }) {
           ref={provided.innerRef}
           {...provided.droppableProps}
           className="
-            bg-gradient-to-b from-white to-gray-50
             p-5
             rounded-2xl
             shadow-lg
             w-80
             min-h-[450px]
-            border border-gray-200
             transition-all duration-300
             hover:shadow-xl
+            border border-black/50
           "
         >
           {/* Column Header */}
@@ -46,7 +45,7 @@ export default function Column({ title, tasks, onEdit }) {
           </div>
 
           {/* Tasks */}
-          <div className="space-y-3 mt-3">
+          <div className="space-y-3 mt-3 ">
             {tasks.map((task, index) => (
               <Draggable
                 key={task.id}

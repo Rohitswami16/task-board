@@ -13,7 +13,7 @@ export default function TaskCard({ task, onEdit }) {
   };
 
   return (
-    <div className="bg-white p-3 rounded-xl mb-3 shadow-sm border border-gray-200 hover:shadow-md transition-all duration-200 relative">
+    <div className="bg-white p-3 rounded-xl mb-3 shadow-sm border border-gray-200 hover:shadow-md transition-all duration-200 relative border border-black/80">
       {/* Top Row: Title + Buttons */}
       <div className="flex justify-between items-start">
         <h3 className="font-semibold text-gray-800 text-sm line-clamp-2">

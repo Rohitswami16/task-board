@@ -6,7 +6,7 @@ export default function ActivityLog() {
   const { state } = useContext(BoardContext);
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-5 h-full">
+    <div className="bg-white/20 backdrop-blur-xl shadow-lg p-5 h-full border border-black/50 rounded-2xl">
       <h2 className="text-lg font-bold mb-4 border-b pb-2">Activity Log</h2>
 
       {state.activityLog.length === 0 ? (

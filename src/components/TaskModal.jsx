@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import React from "react";
 export default function TaskModal({ onClose, onAdd, editTask }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -56,7 +56,7 @@ export default function TaskModal({ onClose, onAdd, editTask }) {
 
   return (
     <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50">
-      <div className="bg-white w-[450px] p-6 rounded-2xl shadow-2xl border border-gray-200 space-y-3">
+      <div className="bg-white w-[450px] p-6 rounded-2xl shadow-2xl border border-black/50 space-y-3">
         <h2 className="text-xl font-semibold text-gray-800 text-center">
           {editTask ? "Edit Task" : "Add Task"}
         </h2>

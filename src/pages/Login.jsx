@@ -9,7 +9,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [remember, setRemember] = useState(false);
   const [error, setError] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // 👁 toggle state
+  const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
     const isAuth =
@@ -47,27 +47,29 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-200 via-blue-100 to-purple-200 p-6">
       <form
         onSubmit={handleLogin}
-        className="w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-8 space-y-6"
+        className="w-full max-w-md bg-white/20 backdrop-blur-xl border border-white/30 rounded-3xl shadow-xl p-10 space-y-6 transition-all duration-500"
       >
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-800">Welcome Back</h2>
-          <p className="text-gray-500 text-sm mt-1">
+          <h2 className="text-3xl font-bold text-black drop-shadow-sm">
+            Welcome Back
+          </h2>
+          <p className="text-gray-800 text-sm mt-1">
             Sign in to continue to your board
           </p>
         </div>
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-medium text-gray-600 mb-1">
+          <label className="block text-sm font-medium text-black/80 mb-1">
             Email
           </label>
           <input
             type="email"
-            placeholder="intern@demo.com"
-            className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+            placeholder="Enter your email"
+            className="w-full px-4 py-3 rounded-xl border border-white/30 bg-white/20 placeholder-black/50 text-black focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none backdrop-blur-sm transition"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -76,14 +78,14 @@ export default function Login() {
 
         {/* Password with Toggle */}
         <div className="relative">
-          <label className="block text-sm font-medium text-gray-600 mb-1">
+          <label className="block text-sm font-medium text-black/80 mb-1">
             Password
           </label>
 
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Enter your password"
-            className="w-full px-4 py-2 pr-16 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+            className="w-full px-4 py-3 pr-16 rounded-xl border border-white/30 bg-white/20 placeholder-black/50 text-black focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none backdrop-blur-sm transition"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -93,20 +95,20 @@ export default function Login() {
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-3 top-9 text-sm text-blue-600 hover:text-blue-800 font-medium"
+            className="absolute right-4 top-10 text-sm text-black/70 hover:text-black font-medium transition"
           >
             {showPassword ? "Hide" : "Show"}
           </button>
         </div>
 
         {/* Remember Me */}
-        <div className="flex items-center justify-between text-sm">
-          <label className="flex items-center gap-2 text-gray-600">
+        <div className="flex items-center justify-between text-sm text-black/80">
+          <label className="flex items-center gap-2">
             <input
               type="checkbox"
               checked={remember}
               onChange={() => setRemember(!remember)}
-              className="accent-blue-600 w-4 h-4"
+              className="accent-blue-400 w-4 h-4"
             />
             Remember me
           </label>
@@ -114,7 +116,7 @@ export default function Login() {
 
         {/* Error */}
         {error && (
-          <div className="bg-red-100 text-red-600 text-sm px-3 py-2 rounded-lg border border-red-300">
+          <div className="bg-red-500/20 text-red-700 text-sm px-3 py-2 rounded-lg border border-red-300/30">
             {error}
           </div>
         )}
@@ -122,14 +124,10 @@ export default function Login() {
         {/* Button */}
         <button
           type="submit"
-          className="w-full py-2.5 rounded-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 active:scale-95 transition transform duration-150 shadow-md"
+          className="w-full py-3 rounded-xl font-semibold text-black bg-white/20 backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 hover:scale-105 active:scale-95 transition transform duration-200"
         >
           Login
         </button>
-
-        {/* <p className="text-xs text-center text-gray-400">
-          Demo Credentials: intern@demo.com / intern123
-        </p> */}
       </form>
     </div>
   );

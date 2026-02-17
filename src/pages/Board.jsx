@@ -96,7 +96,7 @@ export default function Board() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-blue-50 to-indigo-100 p-4">
       {/* Header */}
-      <div className="flex justify-between items-center mb-2 bg-white/70 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-gray-200">
+      <div className="flex justify-between items-center mb-2  bg-white/20 backdrop-blur-xl p-4 rounded-2xl shadow-lg border border-black/50">
         <h1 className="text-3xl font-bold text-gray-800 tracking-tight">
           🚀 Task Board
         </h1>
@@ -136,7 +136,7 @@ export default function Board() {
       </div>
 
       {/* Controls */}
-      <div className="flex flex-wrap gap-4 mb-6 bg-white/70 backdrop-blur-md p-5 rounded-2xl shadow-md border border-gray-200">
+      <div className="flex flex-wrap gap-4 mb-6  bg-white/20 backdrop-blur-xl p-5 rounded-2xl shadow-md border border-black/50">
         <input
           type="text"
           placeholder="🔍 Search by title"
@@ -150,7 +150,7 @@ export default function Board() {
           value={filterPriority}
           onChange={(e) => setFilterPriority(e.target.value)}
         >
-          <option value="All">All Priorities</option>
+          <option value="All">All</option>
           <option value="Low">🟢 Low</option>
           <option value="Medium">🟡 Medium</option>
           <option value="High">🔴 High</option>
@@ -172,7 +172,7 @@ export default function Board() {
       <DragDropContext onDragEnd={handleDragEnd}>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Columns */}
-          
+
           <div className="lg:col-span-3 flex flex-wrap gap-8">
             {columns.map((col) => (
               <Column
