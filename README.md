@@ -70,7 +70,6 @@ task-board/
 └─ README.md
 
 ```
----
 
 ## 🔧 React + Vite Setup
 
@@ -98,3 +97,28 @@ For production apps, it’s recommended to use **TypeScript** and type-aware lin
 ```bash
 git clone https://github.com/yourusername/task-board.git
 cd task-board
+
+
+
+Navigate into the project directory:
+cd task-board
+
+
+Install dependencies:
+npm install
+
+
+Set up Tailwind CSS (if not already configured):
+npx tailwindcss init
+
+
+This generates a tailwind.config.js file.
+Make sure your CSS file imports Tailwind:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Run the development server:
+npm run dev
