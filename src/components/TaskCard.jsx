@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { BoardContext } from "../context/BoardContext";
+import React from "react";
 
 export default function TaskCard({ task, onEdit }) {
   const { dispatch } = useContext(BoardContext);

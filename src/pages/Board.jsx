@@ -5,6 +5,7 @@ import Column from "../components/Column";
 import { useNavigate } from "react-router-dom";
 import TaskModal from "../components/TaskModal";
 import ActivityLog from "../components/ActivityLog";
+import React from "react";
 
 const columns = ["Todo", "Doing", "Done"];
 

@@ -1,5 +1,6 @@
 import { Droppable, Draggable } from "@hello-pangea/dnd";
 import TaskCard from "./TaskCard";
+import React from "react";
 
 export default function Column({ title, tasks, onEdit }) {
   return (

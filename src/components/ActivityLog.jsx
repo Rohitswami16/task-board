@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { BoardContext } from "../context/BoardContext";
+import React from "react";
 
 export default function ActivityLog() {
   const { state } = useContext(BoardContext);
