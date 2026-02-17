@@ -9,6 +9,13 @@ A **drag-and-drop task management web app** built with **React.js**, **Vite**, a
 Supports **creating, editing, deleting, filtering, and sorting tasks** with persistence and activity logs.
 
 ---
+## Live Demo
+You can access the live project here:  
+[https://rohitswami16.github.io/task-board/#/login](https://rohitswami16.github.io/task-board/#/login)
+
+**Demo Credentials:**  
+- **Email:** intern@demo.com  
+- **Password:** intern123  
 
 ## 🛠️ Features
 
