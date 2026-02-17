@@ -126,9 +126,9 @@ export default function Login() {
           Login
         </button>
 
-        <p className="text-xs text-center text-gray-400">
+        {/* <p className="text-xs text-center text-gray-400">
           Demo Credentials: intern@demo.com / intern123
-        </p>
+        </p> */}
       </form>
     </div>
   );

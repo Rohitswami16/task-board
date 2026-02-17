@@ -1,5 +1,6 @@
 import { createContext, useReducer, useEffect } from "react";
 import { loadTasks, saveTasks } from "../utils/storage";
+import React from "react";
 
 export const BoardContext = createContext();
 

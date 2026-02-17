@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Board from "./pages/Board";
+import React from "react";
 
 function PrivateRoute({ children }) {
   const isAuth =
