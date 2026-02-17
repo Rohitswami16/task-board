@@ -122,3 +122,7 @@ Make sure your CSS file imports Tailwind:
 
 Run the development server:
 npm run dev
+
+```
+
+Open your browser at http://localhost:5173 (or the URL shown in the terminal).
