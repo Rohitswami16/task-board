@@ -45,6 +45,7 @@ Supports **creating, editing, deleting, filtering, and sorting tasks** with pers
 
 ## 📁 Project Structure
 
+```
 task-board/
 │
 ├─ src/
@@ -68,7 +69,7 @@ task-board/
 ├─ package.json
 └─ README.md
 
-
+```
 ---
 
 ## 🔧 React + Vite Setup
